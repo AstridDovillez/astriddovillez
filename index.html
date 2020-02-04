@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+
+
+	<head>
+		<meta charset="UTF-8">
+		<title>astriddovillez</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400|Montserrat&display=swap" rel="stylesheet">
+	</head>
+		
+
+	<STYLE>A {text-decoration: none;} </STYLE>
+
+	<body>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+				});
+			});
+		</script>
+
+
+		<div id="conteneur">
+			<header>
+				<div id="logo">
+					<img src="logo.png" alt="logo"/>
+				</div>
+				
+
+				<ul>
+					<li>
+						<a href="#accueil" class="js-scrollTo"><h1>home</h1></a>
+					</li>
+					<li>
+						<a href="#cip" class="js-scrollTo"><h1>works</h1></a>
+					</li>
+					<li>
+						<a href="about.html"><h1>about</h1></a>
+					</li>
+					<li>
+						<a href="#fin" class="js-scrollTo"><h1>contact</h1></a>
+					</li>
+				</ul>
+
+			</header>
+
+
+
+
+			<div id="accueil"></div>
+
+			<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+  				<source src="ecrantitre.mp4" type="video/mp4">
+			</video>
+
+
+			<!-- fin accueil -->
+
+
+
+			<section>
+				<a href="cip.html">
+				<div id="cip"></div>
+				<div id="filter"> <img src="vignettes/titrecip.jpg"/></div>
+				</a>
+			</section>
+
+			<section>
+				<a href="lumine.html">
+				<div id="filterb"> <img src="vignettes/titrelumine.jpg"/></div>
+				</a>
+			</section>
+
+			<section>
+				<a href="typo.html">
+				<div id="filter"> <img src="vignettes/titretypo.jpg"/></div>
+				</a>
+			</section>
+
+			<section>
+				<a href="trombi.html">
+				<div id="filterc"> <img src="vignettes/titretrombi.jpg"/></div>
+				</a>
+			</section>
+
+
+			<!-- fin projets -->
+
+
+
+			<footer>
+
+
+				<div class="petitfond">
+					<img src="images/decofin.png">
+					<div class="text">
+						<div id="fin">
+							<h2>Une question? Un projet? Venez donc en discutez!</h2>
+						</div>
+						<div id="mail">
+							<p>email</p>
+							<div id="email">
+								<a href="mailto:astrid.dov@gmail.com"> 
+								<h3>astrid.dov@gmail.com</h3> </a>
+							</div>
+						</div>
+						<div id="cv">
+							<p>Et mon cv, c'est par
+							<span style="text-decoration: underline;">
+							<a href="cv.pdf" target="_blank"> ici</a>
+							</span>
+							</p>
+						</div>
+						<div id="signature">
+						<p>- © astrid_dovillez/2020 -</p>
+						</div>
+						</div>
+					</div>
+			</footer>
+
+		</div>
+
+		
+
+	</body>
+
+</html>

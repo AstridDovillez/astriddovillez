@@ -1,0 +1,435 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******************************************fin du reset*******/
+
+
+body{
+	background-color: white;
+}
+
+h1:hover {
+	color:#E52E23;
+}
+
+
+header{
+	height: 50px;
+	width: 100%;
+	background-color: white;
+}
+
+
+#logo img{
+	position: absolute;
+	width: 200px;
+	margin-left: 35px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+
+ul{
+	height: 45px;
+	margin-top: 23px;
+	right: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+}
+
+li{
+	height: : 140px;
+	font-size: 25px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	width: 110px;
+}
+
+h1{
+	color: black;
+}
+
+
+a{
+	color: #040506;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #040506;
+	text-decoration: none;
+}
+
+
+
+/****fin du header*****************************************/
+
+
+/**
+
+********        ******       *******     **********
+**********     ********     *********    **********
+***     ***   ***    ***   ***     ***   ***
+***     ***   ***    ***   ***           ***
+**********    ***    ***   ***           ***
+********      **********   ***   *****   **********
+***           **********   ***     ***   **********
+***           ***    ***   ***     ***   ***
+***           ***    ***   ***     ***   ***
+***           ***    ***    **********   **********
+***           ***    ***     *********   **********
+
+**/
+
+
+
+.page{
+	margin-top: 40px;
+	width: 1360px;
+	height: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+}
+
+#illu{
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: -30px;
+}
+
+#illu img{
+	height: 650px;
+}
+
+#texte{
+    width: 450px;
+    margin-left: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 105px;
+}
+
+
+h2{
+    font-size: 40px;
+    font-weight:bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#explication{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+
+
+
+/****fin du doc***/
+
+footer{
+	height: 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	margin-top: 70px;
+}
+
+
+
+.petitfond{
+	width: 100%;
+}
+
+
+
+#signature{
+	width: 100%;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+
+
+/************************************************************
+
+  ******     *******    ***    *****     *****   **   **    ***    **  **     **
+  **    **   **       **   **  **   **  **   **  ***  **  **   **  **  **     **
+  **     **  **       **   **  **   **  **   **  ***  **  **   **  **   **   **
+  **    **   **       **       **   **  **   **  ** * **  **       **   **   **
+  ******     *******   *****   **   **  **   **  ** * **   *****   **   **   **
+  **   **    **            **  ******   **   **  **  ***       **  **    ** **
+  **    **   **       **   **  **       **   **  **  ***  **   **  **    ** **
+  **    **   **       **   **  **       **   **  **   **  **   **  **    ****
+  **    **   *******    ***    **        *****   **   **    ***    **     **
+**/
+
+
+
+/**tablette tel en paysage**/
+
+
+
+
+@media (max-width: 1000px){
+	.page{
+        margin-top: 40px;
+        height: 560px;
+        width: 890px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: top;
+    }
+
+    #illu{
+		display: inline-block;
+		margin-left: 10px;
+		margin-top: -20px;
+	}
+
+	#illu img{
+		height: 580px;
+	}
+
+	#texte{
+	    width: 300px;
+	    margin-left: 90px;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin-top: 70px;
+	}
+
+
+	h2{
+	    font-size: 38px;
+	    font-weight:bold;
+	    font-family: 'Josefin Sans', sans-serif;
+	}
+
+	#explication{
+	    margin-top: 30px;
+	    font-size: 17px;
+	    font-family: 'Montserrat', sans-serif; 
+	}
+
+
+
+
+
+	/****fin du doc***/
+
+	footer{
+		height: 30px;
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		margin-top: 70px;
+	}
+
+
+
+	.petitfond{
+		width: 100%;
+	}
+
+
+
+	#signature{
+		width: 100%;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}
+
+
+/***********************************************************************
+************************************************************************
+************************************************************************
+************************************smartphone**************************
+************************************************************************
+************************************************************************
+************************************************************************/
+
+
+
+
+
+
+@media (max-width: 600px){
+
+    header{
+        height: 100px;
+        width: 100%;
+    }
+
+
+    #logo{
+        width: 100%;
+    }
+
+
+    #logo img{
+        width: 200px;
+        margin-left: 29%;
+        margin-top: 15px;
+    }
+
+
+    ul{
+        height: 45px;
+        margin-top: 70px;
+        left: 12%;
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+    }
+
+    li{
+        height: : 140px;
+        font-size: 25px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        width: 85px;
+    }
+
+    h1{
+        color: black;
+    }
+
+
+    a{
+        color: #040506;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: #040506;
+        text-decoration: none;
+    }
+
+
+
+/****fin du header*****************************************/
+
+
+    .page{
+        margin-top: 20px;
+        height: 900px;
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: top;
+    }
+
+    #illu{
+		display: inline-block;
+		margin-left: 0px;
+		margin-top: -20px;
+	}
+
+	#illu img{
+		height: 480px;
+	}
+
+	#texte{
+	    width: 330px;
+	    margin-left: 20px;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin-top: 70px;
+	}
+
+
+	h2{
+        font-size: 35px;
+        font-weight:bold;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+    }
+
+    #explication{
+        margin-top: 30px;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif; 
+    }
+
+
+
+
+
+	/****fin du doc***/
+
+	footer{
+		height: 30px;
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		margin-top: 70px;
+	}
+
+
+
+	.petitfond{
+		width: 100%;
+	}
+
+
+
+	#signature{
+		width: 100%;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}
